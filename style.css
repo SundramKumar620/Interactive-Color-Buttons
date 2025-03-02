@@ -1,0 +1,106 @@
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8; /* Soft light gray background */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+}
+
+/* Container for input and Create button */
+.cointer {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.cointer:hover {
+    transform: translateY(-5px); /* Elevates the container on hover */
+}
+
+/* Create button styles */
+.cointer button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Full width to match the input field */
+}
+
+.cointer button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Input field styles */
+.cointer input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.cointer input:focus {
+    border-color: #0056b3; /* Change border color on focus */
+}
+
+/* Container for the dynamically created buttons */
+.createbuttonclass {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Styling for each dynamically created button */
+.createbuttonclass button {
+    padding: 12px 24px;
+    border: 1px solid black;
+    background-color: #28a745; /* Green background */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100px; /* Fixed width */
+}
+
+.createbuttonclass button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Styling for the page title */
+h1 {
+    font-size: 36px;
+    color: #333; /* Dark gray */
+    margin-bottom: 20px;
+}
